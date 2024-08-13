@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const images = [
-        '../GoosesGallery/src/main/resources/images/image1.jpg',
-        '../GoosesGallery/src/main/resources/images/image2.jpg',
-        '../GoosesGallery/src/main/resources/images/image3.jpg',
+        '../GoosesGallery/src/main/resources/images/goose1.jpg',
+        '../GoosesGallery/src/main/resources/images/goose2.jpg',
+        '../GoosesGallery/src/main/resources/images/goose3.jpg',
     ];
 
     let currentIndex = 0;

@@ -1,5 +1,22 @@
 body {
     background-color: #808080; /* Серый фон страницы */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Занять полную высоту viewport */
+}
+
+.main-content {
+    flex-grow: 1; /* Занимает все доступное пространство */
+    display: flex;
+    flex-direction: column; /* Убедитесь, что элементы располагаются вертикально */
+    align-items: center; /* Центрирование по горизонтали */
+}
+
+/* чтобы контент внутри был правильно выровнен */
+.container {
+    max-width: 960px; /* Или другой желаемый размер */
+    width: 100%;
+    margin: auto; /* Центрирование контейнера */
 }
 
 .navbar .nav-link {
@@ -29,8 +46,11 @@ body {
 }
 
 #sliderImage {
-    width: 100%; /* Убедиться, что изображение занимает всю ширину */
+    max-width: 70%; /*  максимальная ширина */
+    height: auto; /* Высота остаётся пропорциональной */
     transition: transform 1s ease; /* Плавный переход для трансформации */
+    margin: 0 auto; /* Центрирование изображения */
+    display: block; /* Отображение как блок для центрирования */
 }
 
 .slide-out {
@@ -42,8 +62,9 @@ body {
     opacity: 0; /* Начальная непрозрачность */
     animation: fadeIn 1s forwards; /* Добавляем эффект появления */
 }
+
 .contacts a {
-    color: #2F4F4F; /* цвет текста ссылок на социальные сети */
+    color: #000000; /* цвет текста ссылок на социальные сети */
     font-size: 18px; /* Устанавливает размер шрифта (при необходимости) */
 }
 
@@ -95,4 +116,13 @@ h1 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.year {
+    margin-top: 10px;
 }

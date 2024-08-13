@@ -1,0 +1,12 @@
+Информация об источниках изображений
+
+logo -  https://www.flaticon.com/ru/free-icon/goose_714023?term=%D0%B3%D1%83%D1%81%D1%8C&page=1&position=13&origin=search&related_id=714023
+
+image1.jpg   - https://wallpaperscraft.ru/wallpaper/voin_katana_anime_1075388
+image2.jpg   - https://wallpaperscraft.ru/wallpaper/devushka_ulybka_tsvetok_1035552
+image3.jpg   - https://wallpaperscraft.ru/wallpaper/devushka_vedma_shar_1145093
+
+
+goose1.jpg - https://vk.com/feed?z=photo-66640066_457678744%2Fwall-66640066_879831
+goose2.jpg - https://vk.com/feed?z=photo-66640066_457678742%2Fwall-66640066_879831
+goose3.jpg - https://vk.com/feed?z=photo-66640066_457678736%2Fwall-66640066_879831
