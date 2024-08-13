@@ -1,17 +1,19 @@
 body {
-    background-color: #f5f5f5; /* светло-серый фон страницы */
+    background-color: #DCDCDC; /* серый фон страницы */
 }
 
 .navbar {
-    background-color: #343a40; /* темно-серый фон верхнего меню */
+    background-color: #A9A9A9; /* темно-серый фон верхнего меню */
 }
 
 .navbar a {
-    color: white; /* цвет текста в меню */
+    color: 	#000000; /* цвет текста в меню */
+    font-size: 24px; /* увеличиваем размер шрифта */
+    transition: color 0.3s ease; /* добавим плавный переход цвета */
 }
 
 .navbar a:hover {
-    color: #ddd; /* цвет текста при наведении */
+    color: white; /* цвет текста при наведении */
 }
 
 .logo {
@@ -19,7 +21,15 @@ body {
 }
 
 .menu {
-    margin-top: 15px;
+    margin-top: 05px;
+}
+
+/* Черная разделительная полоса */
+.divider {
+    height: 2px; /* высота разделительной полосы */
+    background-color: #000000; /* цвет разделительной полосы */
+    margin-top: 0; /* отступ сверху, можете настроить по желанию */
+    margin-bottom: 20px; /* отступ снизу, можете настроить по желанию */
 }
 
 .image-slider {
@@ -44,7 +54,6 @@ body {
     max-width: 100%;
     height: auto;
     transition: opacity 0.5s ease; /* Добавляем плавность */
-
 }
 
 .slide-out {
