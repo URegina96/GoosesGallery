@@ -1,3 +1,27 @@
+body {
+    background-color: #f5f5f5; /* светло-серый фон страницы */
+}
+
+.navbar {
+    background-color: #343a40; /* темно-серый фон верхнего меню */
+}
+
+.navbar a {
+    color: white; /* цвет текста в меню */
+}
+
+.navbar a:hover {
+    color: #ddd; /* цвет текста при наведении */
+}
+
+.logo {
+    height: 50px; /* высота логотипа */
+}
+
+.menu {
+    margin-top: 15px;
+}
+
 .image-slider {
     position: relative;
     text-align: center;
@@ -16,16 +40,25 @@
     z-index: 10;
 }
 
+#sliderImage {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease; /* Добавляем плавность */
+
+}
+
+.slide-out {
+    opacity: 0; /* Исходящее состояние */
+}
+
+.slide-in {
+    opacity: 1; /* Входящее состояние */
+}
+
 #prevBtn {
     left: 10px;
 }
 
 #nextBtn {
     right: 10px;
-}
-
-#sliderImage {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
 }

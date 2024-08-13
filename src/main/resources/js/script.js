@@ -7,29 +7,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let currentIndex = 0;
     const sliderImage = document.getElementById('sliderImage');
+    let isTransitioning = false; // Флаг для отслеживания перехода
 
-    function updateImage() {
-        sliderImage.src = images[currentIndex];
+    function updateImage(nextIndex) {
+        if (isTransitioning) return; // Если идет переход, то ничего не делаем
+        isTransitioning = true;
+
+        sliderImage.classList.add('slide-out'); // Добавляем класс выхода
+
+        setTimeout(() => {
+            currentIndex = nextIndex !== undefined ? nextIndex : (currentIndex + 1) % images.length;
+            sliderImage.src = images[currentIndex];
+            sliderImage.classList.remove('slide-out');
+            sliderImage.classList.add('slide-in');
+
+            setTimeout(() => {
+                sliderImage.classList.remove('slide-in'); // Убираем класс входа
+                isTransitioning = false; // Разрешаем следующий переход
+            }, 1000); // Длительность анимации
+        }, 1000); // Время, необходимое для завершения предыдущей анимации
     }
 
-    // Функция для переключения к предыдущему слайду
     document.getElementById('prevBtn').addEventListener('click', () => {
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-        updateImage();
+        updateImage((currentIndex - 1 + images.length) % images.length);
     });
 
-    // Функция для переключения к следующему слайду
     document.getElementById('nextBtn').addEventListener('click', () => {
-        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
         updateImage();
     });
 
-    // Автоматическая смена слайдов каждые 5 секунд
     setInterval(() => {
-        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-        updateImage();
-    }, 1000); // Время в миллисекундах (5000 мс = 5 секунд)
+        updateImage(); // Автоматическая смена слайдов каждые 5 секунд
+    }, 7000);
 
-    // Начальная установка первого изображения
-    updateImage();
+    updateImage(); // Начальная установка первого изображения
 });
