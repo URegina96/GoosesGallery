@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .logo {
+            height: 50px; /* Высота логотипа */
+        }
+        .menu {
+            margin-top: 15px;
+        }
+        .image-slider {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #sliderImage {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Навигационное меню -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="../GoosesGallery/src/main/resources/images/logo.png" alt="Логотип" class="logo">
+    </a>
+    <div class="collapse navbar-collapse menu" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">О нас</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Контакты</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Раздел "О нас" -->
+<section id="about" class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="image-slider">
+                <button class="btn btn-light" id="prevBtn">&#10094;</button>
+                <img id="sliderImage" src="../GoosesGallery/src/main/resources/images/image1.jpg" alt="Фотография" class="img-fluid">
+                <button class="btn btn-light" id="nextBtn">&#10095;</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2>О компании</h2>
+            <p>
+                Здесь будет описание
+            </p>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
