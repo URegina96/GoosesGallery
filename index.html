@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Название страницы</title>
+    <title>Интернет-магазин гусей</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/main/resources/styles/styles.css">  <!-- подключение общего CSS файла -->
+    <style>
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 15px;
+            padding: 10px;
+            text-align: center;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .divider {
+            height: 2px;
+            background-color: black;
+            margin: 20px 0;
+        }
+        /* Новый стиль для центровки заголовка */
+        h1 {
+            text-align: center;
+            margin-top: 20px; /* Отступ сверху */
+            margin-bottom: 20px; /* Отступ снизу */
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light">
@@ -27,12 +51,64 @@
     </div>
 </nav>
 
-<!-- Черная разделительная полоса -->
-<div class="divider"></div>
-
 <div class="container mt-4">
     <h1>Добро пожаловать в наш интернет-магазин гусей!</h1>
-    <!-- Здесь можно добавить дополнительный контент для главной страницы -->
+    <div class="row">
+        <!-- Товар 1 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="../GoosesGallery/src/main/resources/images/goose1.jpg" alt="Гусь 1" class="product-image">
+                <h4>Гусь белый</h4>
+                <p>Описание гусей белого цвета, отличающихся высокой продуктивностью.</p>
+                <p class="price">Цена: 3000 ₽</p>
+            </div>
+        </div>
+        <!-- Товар 2 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="../GoosesGallery/src/main/resources/images/goose2.jpg" alt="Гусь 2" class="product-image">
+                <h4>Гусь серый</h4>
+                <p>Описание серых гусей, стойких к холодам и неприхотливых в уходе.</p>
+                <p class="price">Цена: 3500 ₽</p>
+            </div>
+        </div>
+        <!-- Товар 3 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="../GoosesGallery/src/main/resources/images/goose3.jpg" alt="Гусь 3" class="product-image">
+                <h4>Гусь черный</h4>
+                <p>Описание черного гуся, известного своим вкусным мясом и большой яйценоскостью.</p>
+                <p class="price">Цена: 4000 ₽</p>
+            </div>
+        </div>
+        <!-- Товар 4 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="../GoosesGallery/src/main/resources/images/goose1.jpg" alt="Гусь 1" class="product-image">
+                <h4>Гусь белый</h4>
+                <p>Описание гусей белого цвета, отличающихся высокой продуктивностью.</p>
+                <p class="price">Цена: 3000 ₽</p>
+            </div>
+        </div>
+        <!-- Товар 5 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="../GoosesGallery/src/main/resources/images/goose2.jpg" alt="Гусь 2" class="product-image">
+                <h4>Гусь серый</h4>
+                <p>Описание серых гусей, стойких к холодам и неприхотливых в уходе.</p>
+                <p class="price">Цена: 3500 ₽</p>
+            </div>
+        </div>
+        <!-- Товар 6 -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="../GoosesGallery/src/main/resources/images/goose3.jpg" alt="Гусь 3" class="product-image">
+                <h4>Гусь черный</h4>
+                <p>Описание черного гуся, известного своим вкусным мясом и большой яйценоскостью.</p>
+                <p class="price">Цена: 4000 ₽</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
