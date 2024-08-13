@@ -1,67 +1,67 @@
 body {
-    background-color: #DCDCDC; /* серый фон страницы */
+    background-color: #808080; /* Серый фон страницы */
 }
 
-.navbar {
-    background-color: #A9A9A9; /* темно-серый фон верхнего меню */
+.navbar .nav-link {
+    color: #000000 !important; /* Используем более специфичный селектор и добавляем !important */
+    font-size: 24px; /* Размер шрифта */
+    transition: color 0.3s ease; /* Плавный переход цвета */
 }
 
 .navbar a {
-    color: 	#000000; /* цвет текста в меню */
-    font-size: 24px; /* увеличиваем размер шрифта */
-    transition: color 0.3s ease; /* добавим плавный переход цвета */
+    color: #000000; /* Цвет текста в меню */
+    font-size: 24px; /* Размер шрифта */
+    transition: color 0.3s ease; /* Плавный переход цвета */
 }
 
 .navbar a:hover {
-    color: white; /* цвет текста при наведении */
+    color: white; /* Цвет текста при наведении */
 }
 
 .logo {
-    height: 50px; /* высота логотипа */
-}
-
-.menu {
-    margin-top: 05px;
-}
-
-/* Черная разделительная полоса */
-.divider {
-    height: 2px; /* высота разделительной полосы */
-    background-color: #000000; /* цвет разделительной полосы */
-    margin-top: 0; /* отступ сверху, можете настроить по желанию */
-    margin-bottom: 20px; /* отступ снизу, можете настроить по желанию */
+    height: 50px; /* Высота логотипа */
 }
 
 .image-slider {
-    position: relative;
-    text-align: center;
-}
-
-.image-slider button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 10;
+    overflow: hidden; /* Скрыть все, что выходит за пределы контейнера */
+    width: 100%; /* Ширина контейнера */
+    position: relative; /* Обеспечить позиционирование кнопок */
 }
 
 #sliderImage {
-    max-width: 100%;
-    height: auto;
-    transition: opacity 0.5s ease; /* Добавляем плавность */
+    width: 100%; /* Убедиться, что изображение занимает всю ширину */
+    transition: transform 1s ease; /* Плавный переход для трансформации */
 }
 
 .slide-out {
-    opacity: 0; /* Исходящее состояние */
+    transform: translateX(-100%); /* Убираем влево */
 }
 
 .slide-in {
-    opacity: 1; /* Входящее состояние */
+    transform: translateX(0); /* Показываем изображение с нуля */
+    opacity: 0; /* Начальная непрозрачность */
+    animation: fadeIn 1s forwards; /* Добавляем эффект появления */
+}
+.contacts a {
+    color: #2F4F4F; /* цвет текста ссылок на социальные сети */
+    font-size: 18px; /* Устанавливает размер шрифта (при необходимости) */
+}
+
+.contacts a:hover {
+    color: #ffffff; /* Цвет текста при наведении (при необходимости) */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Полная непрозрачность в конце анимации */
+    }
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Выравнивание кнопок по центру вертикально */
+    z-index: 10; /* Располагаем кнопки выше изображения */
 }
 
 #prevBtn {
@@ -70,4 +70,29 @@ body {
 
 #nextBtn {
     right: 10px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.divider {
+    height: 2px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

@@ -6,37 +6,16 @@
     <title>Интернет-магазин гусей</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/main/resources/styles/styles.css">  <!-- подключение общего CSS файла -->
-    <style>
-        .product-card {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin: 15px;
-            padding: 10px;
-            text-align: center;
-        }
-        .product-image {
-            max-width: 100%;
-            height: auto;
-        }
-        .divider {
-            height: 2px;
-            background-color: black;
-            margin: 20px 0;
-        }
-        /* Новый стиль для центровки заголовка */
-        h1 {
-            text-align: center;
-            margin-top: 20px; /* Отступ сверху */
-            margin-bottom: 20px; /* Отступ снизу */
-        }
-    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#">
         <img src="../GoosesGallery/src/main/resources/images/logo.png" alt="Логотип" class="logo">
     </a>
-    <div class="collapse navbar-collapse menu" id="navbarNav">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Главная</a>

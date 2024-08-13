@@ -12,7 +12,10 @@
     <a class="navbar-brand" href="#">
         <img src="../GoosesGallery/src/main/resources/images/logo.png" alt="Логотип" class="logo">
     </a>
-    <div class="collapse navbar-collapse menu" id="navbarNav">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Главная</a>
@@ -31,10 +34,10 @@
 <section id="about" class="container mt-5">
     <div class="row">
         <div class="col-md-6">
-            <div class="image-slider">
-                <button class="btn btn-light" id="prevBtn">&#10094;</button>
+            <div class="image-slider" style="position: relative;">
+                <button class="btn btn-light" id="prevBtn" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%);">&#10094;</button>
                 <img id="sliderImage" src="../GoosesGallery/src/main/resources/images/image1.jpg" alt="Фотография" class="img-fluid">
-                <button class="btn btn-light" id="nextBtn">&#10095;</button>
+                <button class="btn btn-light" id="nextBtn" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%);">&#10095;</button>
             </div>
         </div>
         <div class="col-md-6">
