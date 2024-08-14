@@ -18,10 +18,6 @@
 
 ![Скриншот главной страницы](https://raw.githubusercontent.com/URegina96/GoosesGallery/0aef63dc407fef4bf3b254d33ac41a267a7755bb/src/main/resources/images/image1.jpg.png)
 
-- Страница "О нас":
-
-![Скриншот страницы "О нас"](https://raw.githubusercontent.com/URegina96/GoosesGallery/0aef63dc407fef4bf3b254d33ac41a267a7755bb/src/main/resources/images/image2.jpg.jpg)
-
 - Страница "Контакты":
 
 ![Скриншот страницы "Контакты"](https://raw.githubusercontent.com/URegina96/GoosesGallery/0aef63dc407fef4bf3b254d33ac41a267a7755bb/src/main/resources/images/image3.jpg.png)
